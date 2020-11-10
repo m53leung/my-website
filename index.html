@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		.navbar {
+			background-color:black;
+			margin: 0;
+			padding: 0;
+			list-style-type:none;
+			overflow:hidden;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+		}
+		
+		.navbar li {
+			float: left;
+			text-decoration: none;
+		}
+		
+		.navbar a {
+			display: block;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			color: white;
+		}
+		
+		.navbar a:hover {
+			background-color: #ffd64e;
+			color: black;
+		}
+		
+		.container {
+			position:relative;
+			overflow: hidden;
+		}
+		
+		.fullscreen {
+			width: 100%;
+			display:block;
+		}
+		
+		.right-middle {
+			position: absolute;
+			top: 50%;
+			right: 50px;
+			transform: translate(0, -50%);
+			background-color: rgba(145, 145, 145, 0.5);
+			color: white;
+			padding: 20px;
+			width: 40%;
+		}
+		
+		.image-left {
+			float:left;
+			width: 40%;
+		}
+		
+		.projectContainer {
+			float: left;
+			width: 60%;
+		}
+		
+		.text-container {
+			width:90%;
+			margin:auto;
+		}
+		
+		.logo {
+			height: 300px;
+			position: absolute;
+			left: 50%;
+			top: 50px;
+			transform: translate(-50%, 0);
+		}
+		
+		.centered {
+			position:absolute;
+			top: 400px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			text-align: center;
+		}
+		
+		.centered h1 {
+			background-color: #ffd64e;
+			margin: 0;
+			padding: 20px;
+		}
+		
+		.centered h2 {
+			background-color: #72cdf7;
+			margin: 0;
+			padding: 20px;
+		}
+		
+		.card {
+			margin:20px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+			background-color: white;
+		}
+		
+		.content-left {
+			width: 60%;
+			float:left;
+		}
+		
+		.content-left p {
+			margin-left: 50px;
+		}
+		
+		.content-left li {
+			margin-left: 50px;
+		}
+		
+		.img-container {
+			float:left;
+			width: 40%;
+		}
+		
+		.banner {
+			background-color:#ffd64e;
+			margin:0;
+			padding:20px;
+			display:block;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+		}
+		
+		.row {
+			overflow:hidden;
+			margin: 50px;
+		}
+		
+		.footer {
+			background-color:black;
+			text-align:center;
+			color:white;
+			margin:0;
+			padding:20px;
+		}
+		
+		h1 {
+			text-align: center;
+			font-size: 50px;
+		}
+		
+		h2 {
+			text-align: center;
+			font-size: 40px;
+		}
+		
+		p {
+			font-size: 20px;
+		}
+		
+		li {
+			font-size: 20px;
+		}
+		
+		body {
+			margin:0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+	
+	</head>
+	<body>
+		<ul class="navbar">
+			<li><a href="#">ABOUT ME</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
+			<li><a href="#education">EDUCATION</a></li>
+			<li><a href="#employment">EMPLOYMENT</a></li>
+		</ul>
+		<div class="container">
+		<img class="fullscreen" src="https://jeffjbutler.com/wp-content/uploads/2018/07/software-developer-vs-software-engineer.jpg">
+		</img>
+		<div class="right-middle">
+			<h1>Hi, I'm Matthew Leung</h1>
+			<p>I created this website to tell you a little bit about myself. As an aspiring computer engineering student, I am always looking for opporunities to develop my skills. My favourite things to do
+			during my free time include:
+			<ul>
+			<li>Playing goalie in soccer games</li>
+			<li>Practicing the piano</li>
+			<li>Doing interesting and fun projects</li>
+			</ul>
+			<p>Thank you for looking through my website, and I hope you are able to learn a thing or two about me.</p>
+		</div>
+		</div>
+		<h1 class="banner" id="projects">Projects</h1>
+		<div class="row">
+		<div class="image-left">
+		<img src="gunnerz.png" style="width:90%; margin: auto; display:block;"></img>
+		</div>
+		<div class="projectContainer">
+			<div class="text-container">
+			<h1>GUNNER Z</h1>
+			<p>Using the java eclipse IDE, I created a first person shooter game called 'GUNNER Z'. I was inspired to create the game after learning about a technique called ray casting, which many of the old fps games
+			used. The actual game was closely inspired by Call of Duty Zombies, and has the player face off against endless waves of enemies. The game also implements path finding AI to lead enemies towards
+			the player. You can view the project on github <a href="https://github.com/m53leung/first-person-shooter">here</a>.</p>
+			</div>
+		</div>
+		</div>
+		<h1 class="banner" id="education">Education</h1>
+		<div class="container">
+		<img class="fullscreen" src="https://uwaterloo.ca/stories/sites/ca.stories/files/styles/feature_large/public/environment.jpg?itok=cT7VUK7_">
+		</img>
+		<img class="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png"></img>
+		<div class="centered">
+			<div class="card">
+			<h1>University of Waterloo</h1>
+			<div style="padding: 20px;">
+			<p>Currently in my first year of studies in the Computer Engineering Program</p>
+			<p>Candidate for Bachelor of Applied Science, Computer Engineering, University of Waterloo, Ontario, September 2020 – present</p>
+			</div>
+			</div>
+			<div class="card">
+			<h2>Secondary Education</h2>
+			<div style="padding: 20px;">
+			<p>Ontario Secondary School Diploma, Thornhill Secondary School, Thornhill, Ontario, September 2016 - June 2020</p>
+			</div>
+			</div>
+		</div>
+		</div>
+		<h1 class="banner" id="employment">Employment Experience</h1>
+		<div class="row">
+		<div class="content-left">
+			<h1>Within Range Golf Centres</h1>
+			<p>Field Worker, Within Range Golf Centres Inc., Thornhill, Ontario, March 2019 – August 2020</p>
+			<ul>
+				<li>Communicated closely with fellow workers to operate effectively as a team</li>
+				<li>Efficiently communicated during busy hours to direct and manage golfers</li>
+				<li>Operated machinery to collect and clean golf balls, maintained the supply of balls for customers</li>
+				<li>Trained new employees to create workers who were self sufficient</li>
+			</ul>
+		</div>
+		<div class="img-container">
+		<img src="https://withinrange.ca/thornhill/wp-content/uploads/sites/3/2017/01/2017-01-03-23-58-55.jpg" style="width:70%;margin:auto;display:block;"></img>
+		</div>
+		</div>
+		<div class="footer">
+			<p>Matthew Leung</p>
+			<p>m53leung@uwaterloo.ca</p>
+		</div>
+	</body>
+</html>
